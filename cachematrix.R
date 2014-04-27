@@ -1,6 +1,6 @@
 #Functions to calculate the inverse of a matrix or get it from the cache
 
-#***************************************************************************************************************
+#********************************************************************************************************************
 #Creates a special "matrix" object that seeks for its inverse in cache. 
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -17,9 +17,9 @@ makeCacheMatrix <- function(x = matrix()) {
            getinverse = getinverse)
 }
 
-#***************************************************************************************************************
+#*********************************************************************************************************************
 #Checks if the inverse has been already calculated, if so, gets the inverse from the cache and skips computation.
-#If not, calculates the inverse of the data and sets the value of the mean in the cache via the setmean function.
+#If not, calculates the inverse of the data and sets the value of the inverse in the cache via the setinverse function.
       
 cacheSolve <- function(x, ...) {
       inv <- x$getinverse()
